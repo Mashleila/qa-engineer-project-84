@@ -10,6 +10,7 @@ test-cases:
 
 - summary: |
     Кнопка "Оформить заказ" не передает заказ в обработку в связи с отсутствием персональных данных пользователя
+  status: fail
   environment: |
     Google Chrome 138.0.7204.101 (Официальная сборка) (64 бит)
     Windows 10 
@@ -29,6 +30,7 @@ test-cases:
 
 - summary: |
     Кнопки "В корзину" расположены на разных уровнях 
+  status: fail
   environment: |
     Google Chrome 138.0.7204.101 (Официальная сборка) (64 бит)
     Windows 10 
@@ -46,6 +48,7 @@ test-cases:
 
 - summary: |
     Кнопки перевода на русский язык рабоатет некорректно
+  status: fail
   environment: |
     Google Chrome 138.0.7204.101 (Официальная сборка) (64 бит)
     Windows 10 
@@ -64,6 +67,7 @@ test-cases:
 
 - summary: |
     Отстутствует наименование последнего фильтра в блоке "Бренд"
+  status: fail
   environment: |
     Google Chrome 138.0.7204.101 (Официальная сборка) (64 бит)
     Windows 10 
@@ -72,6 +76,7 @@ test-cases:
   expected-result: |
     Наименование фильтра соответствует категориям товаров, которые будут отображены на странице сайта при выборе данного фильтра
   actual-result: |
+    Наименование фильтра не соответствует категориям товаров
 
 - summary: |
     Проверка работы фильтров товаров и кнопки "Category"
@@ -79,6 +84,7 @@ test-cases:
 
 - summary: |
     Блоки "Category" и "Brand" меняются при нажатии на кнопку "Next"
+  status: fail
   environment: |
     Google Chrome 138.0.7204.101 (Официальная сборка) (64 бит)
     Windows 10 
@@ -96,6 +102,7 @@ test-cases:
 
 - summary: |
     При переходе на следующую страницу товаров после обновления пользователя выкидывает на главную страницу
+  status: fail
   environment: |
     Google Chrome 138.0.7204.101 (Официальная сборка) (64 бит)
     Windows 10 
@@ -111,6 +118,7 @@ test-cases:
     bugreports:
 - summary: |
     Появилась пустая строка в списке категорий
+  status: fail
   environment: |
     Google Chrome 138.0.7204.101 (Официальная сборка) (64 бит)
     Windows 10 
@@ -128,6 +136,7 @@ test-cases:
 
 - summary: |
     Отсутствуют поля для регистрации пользвателя 
+  status: fail
   environment: |
     Google Chrome 138.0.7204.101 (Официальная сборка) (64 бит)
     Windows 10 
