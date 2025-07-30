@@ -1,36 +1,63 @@
 ---
 - summary: |
-Поиск товара по ключевому слову
-status: pass
+    Поиск товара по ключевому слову
+  status: pass
+  devtools-check: |
+    [Network] Поисковый запрос "/api/search?q=Mascara" - Status: 200
+    [Console] Нет ошибок
 
 - summary: |
-Поиск товара по категориям
-status: pass
+    Поиск товара по категориям
+  status: pass
+  devtools-check: |
+    [Network] Запрос категорий "/api/categories/beauty" - Status: 200
+    [Console] Нет ошибок
 
 - summary: |
-Возможность фильтровать товары
-status: pass
+    Проверка возможности фильтровать товары
+  status: pass
+  devtools-check: |
+    [Network] Фильтрация "/api/filter?price_max=6577.499" - Status: 200
+    [Performance] Время обработки: 320ms
 
 - summary: |
-Мобильная версия сайта
-status: pass
+    Мобильная версия сайта
+  status: pass
+  devtools-check: |
+    [Lighthouse] Mobile score: 92/100
+    [Console] Нет ошибок адаптации
 
 - summary: |
-Проверка сайта на кроссбраузерность
-status: pass
+    Проверка сайта на кроссбраузерность
+  status: pass
+  devtools-check: |
+    [BrowserStack] Chrome, Firefox, Edge - Layout consistent
+    [Console] Нет браузер-специфичных ошибок
 
 - summary: |
-Возможность просматривать товары и информацию о них
-status: pass
+    Возможность просматривать товары и информацию о них
+  status: pass
+  devtools-check: |
+    [Network] Запрос товара "/api/products/eyeshadow-palette" - Status: 200
+    [LCP] Время загрузки контента: 1.2s
 
 - summary: |
-Добавление товара в корзину 
-status: pass
+    Добавление товара в корзину
+  status: pass
+  devtools-check: |
+    [Network] POST "/api/cart/add" - Status: 201
+    [Application] Cart updated in localStorage
 
 - summary: |
-Проверка переключения языка интерфейса
-status: pass
+    Проверка переключения языка интерфейса
+  status: pass
+  devtools-check: |
+    [Network] Запрос переводов "/locales/ru.json" - Status: 200
+    [i18n] Все ключи переведены
 
 - summary: |
-Проверка сайта на наличие локализации 
-status: pass
+    Проверка сайта на наличие локализации
+  status: pass
+  devtools-check: |
+    [Network] Все локализованные ресурсы загружены
+    [Console] Нет missing translation keys
