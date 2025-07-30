@@ -100,5 +100,12 @@
     После обновления пользователь остается на той странице, на которой он находился до обновления
   actual-result: |
     Пользователь снова оказывается на главной странице сайта
+  devtools-data: |
+    [Console] ERROR: Element '#register-btn' not found
+    [Network] Missing: GET /register-page (404 Not Found)
+    [Elements] Не обнаружено форм регистрации в DOM
+  screenshot: bug.png
+  priority: High
+  status: Open
 
     
