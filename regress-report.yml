@@ -115,7 +115,7 @@ test-cases:
   actual-result: |
     Пользователь снова оказывается на главной странице сайта
 
-    bugreports:
+bugreports:
 - summary: |
     Появилась пустая строка в списке категорий
   status: fail
